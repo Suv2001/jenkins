@@ -5,8 +5,8 @@ pipeline {
         stage('Install Python') {
             steps {
                 sh '''
-                  sudo apt update
-                  sudo apt install python3 -y
+                  echo "your-password" | sudo -S apt update
+                  echo "your-password" | sudo -S apt install python3 -y
                 '''
             }
         }
